@@ -1,4 +1,5 @@
 import UIKit
+import shared
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate
@@ -9,6 +10,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate
     {
         window = UIWindow(frame: UIScreen.main.bounds)
         
+        print(Greeting().greeting())
         let rootNavigation = UINavigationController(rootViewController: IDResultListTableViewController())
         rootNavigation.navigationBar.prefersLargeTitles = true
         
